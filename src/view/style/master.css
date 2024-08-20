@@ -1,0 +1,162 @@
+/* Start Global Style */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    width: 100%;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.header button {
+    padding: 5px 10px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+}
+
+.header #btn-container button:nth-child(2) {
+    margin-left: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.footer span {
+    margin-top: 20px;
+    display: block;
+    font-weight: 400;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}
+
+/* End Global Style */
+
+/* Start Product List */
+.product-list form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.product-list .product {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.product-list .product span {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-list .product .delete-checkbox {
+    display: block;
+}
+
+/* End Product List */
+
+/* Start add-product */
+#product_form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#product_form label:not(#type) {
+    display: inline-block;
+    width: 75px;
+}
+
+#product_form label#type {
+    margin-right: 15px;
+}
+
+#product_form #productType {
+    padding: 2px;
+    font-size: 15px;
+    width: 115px;
+    padding-left: 5px;
+}
+
+#product_form input {
+    padding: 2px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+#product_form div {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#product_form section label {
+    width: 115px !important;
+}
+
+#product_form section div {
+    margin-bottom: 15px;
+}
+
+#product_form section {
+    border: 2px solid black;
+    padding: 20px;
+    width: 30%;
+}
+
+/* End add-product */
